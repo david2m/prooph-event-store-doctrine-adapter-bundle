@@ -1,0 +1,13 @@
+{
+    "name": "david2m/prooph-event-store-doctrine-adapter-bundle",
+    "description": "Integrate prooph/event-store-doctrine-adapter into a Symfony application.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Twomey",
+            "email": "david2m@hotmail.co.uk"
+        }
+    ],
+    "require": {}
+}
