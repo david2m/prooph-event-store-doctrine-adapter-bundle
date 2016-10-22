@@ -1,0 +1,23 @@
+framework:
+  test: ~
+  secret: 'Required by the FrameworkBundle'
+
+doctrine:
+  dbal:
+    driver: pdo_mysql
+    host: localhost
+    dbname: test_db
+    user: admin
+    password: secure_password
+
+prooph_event_store:
+  stores:
+    default:
+      adapter: prooph_event_store.doctrine_adapter.default
+
+prooph_event_store_doctrine_adapter:
+  adapters:
+    default:
+      connection: doctrine.dbal.default_connection
+    remote:
+      connection: doctrine.dbal.default_connection
